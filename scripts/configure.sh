@@ -14,8 +14,10 @@ sudo apt install -y xfce4 xfce4-goodies xfonts-base xubuntu-icon-theme xubuntu-w
 # wget https://phoenixnap.dl.sourceforge.net/project/turbovnc/2.2.5/turbovnc_2.2.5_amd64.deb
 # sudo dpkg -i turbovnc_2.2.5_amd64.deb
 
-wget https://yer.dl.sourceforge.net/project/turbovnc/3.0/turbovnc_3.0_amd64.deb
-sudo dpkg -i turbovnc_3.0_amd64.deb
+#wget https://yer.dl.sourceforge.net/project/turbovnc/3.0/turbovnc_3.0_amd64.deb
+#sudo dpkg -i turbovnc_3.0_amd64.deb
+
+sudo apt install -y tightvnc
 
 # Third, download ngrok
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
@@ -23,7 +25,7 @@ unzip ngrok-stable-linux-amd64.zip
 chmod +x ngrok
 
 # Fourth, generate and copy passwd file and xstartup script
-export PATH=$PATH:/opt/TurboVNC/bin
+#export PATH=$PATH:/opt/TurboVNC/bin
 mkdir $HOME/.vnc
 cp ./resources/xstartup $HOME/.vnc/xstartup.turbovnc
 echo $VNC_PASSWORD | vncpasswd -f > $HOME/.vnc/passwd
