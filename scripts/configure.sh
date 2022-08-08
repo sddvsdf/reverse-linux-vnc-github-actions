@@ -11,8 +11,11 @@ sudo apt install -y xfce4 xfce4-goodies xfonts-base xubuntu-icon-theme xubuntu-w
 # Fun Fact: TurboVNC is the only VNC implementations that supports OpenGL acceleration without an graphics device by default
 # By the way, you can still use the legacy version of this script where instead of installing TurboVNC, tightvncserver is installed.
 # Old mirror: wget https://ufpr.dl.sourceforge.net/project/turbovnc/2.2.5/turbovnc_2.2.5_amd64.deb
-wget https://phoenixnap.dl.sourceforge.net/project/turbovnc/2.2.5/turbovnc_2.2.5_amd64.deb
-sudo dpkg -i turbovnc_2.2.5_amd64.deb
+# wget https://phoenixnap.dl.sourceforge.net/project/turbovnc/2.2.5/turbovnc_2.2.5_amd64.deb
+# sudo dpkg -i turbovnc_2.2.5_amd64.deb
+
+wget https://yer.dl.sourceforge.net/project/turbovnc/3.0/turbovnc_3.0_amd64.deb
+sudo dpkg -i turbovnc_3.0_amd64.deb
 
 # Third, download ngrok
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
