@@ -17,7 +17,7 @@ sudo apt install -y xfce4 xfce4-goodies xfonts-base xubuntu-icon-theme xubuntu-w
 #wget https://yer.dl.sourceforge.net/project/turbovnc/3.0/turbovnc_3.0_amd64.deb
 #sudo dpkg -i turbovnc_3.0_amd64.deb
 
-sudo apt install -y tightvnc
+sudo apt install -y tightvncserver
 
 # Third, download ngrok
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
